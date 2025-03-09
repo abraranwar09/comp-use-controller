@@ -16,12 +16,12 @@ app.post('/run-command', async (req, res) => {
     try {
         console.log('Launching browser...');
         const browser = await puppeteer.launch({
-            headless: true,
+            headless: false,
             protocolTimeout: 0
         });
         const page = await browser.newPage();
-        console.log('Navigating to http://localhost:8501/');
-        await page.goto('http://localhost:8501/');
+        console.log('Navigating to http://15.204.31.96:8501/');
+        await page.goto('http://15.204.31.96:8501/');
 
         console.log('Waiting for the textarea to be available...');
         await page.waitForSelector('textarea[aria-label="Type a message to send to Claude to control the computer..."]', { timeout: 0 });
