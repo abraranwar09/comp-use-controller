@@ -2,7 +2,7 @@ const WebSocket = require('ws');
 const puppeteer = require('puppeteer');
 const cors = require('cors');
 
-const PORT = 5173;
+const PORT = 3000;
 
 const wss = new WebSocket.Server({ port: PORT });
 
