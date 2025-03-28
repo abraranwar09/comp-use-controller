@@ -9,7 +9,7 @@ const wss = new WebSocket.Server({ port: PORT });
 let browser;
 let window = {};
 
-const executionURL = `http://15.204.31.96:8501/`
+const executionURL = `http://3.133.156.235:8501/`
 const localURL = `http://localhost:8501/`
 
 wss.on('connection', (ws) => {
